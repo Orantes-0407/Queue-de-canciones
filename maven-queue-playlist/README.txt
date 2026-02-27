@@ -13,9 +13,9 @@ El sistema está organizado como un **proyecto Maven multi-módulo**, compuesto 
 
 
 
-# 🧱 Cómo compilar el proyecto desde consola (PASO A PASO)
+Cómo compilar el proyecto desde consola (PASO A PASO)
 
-## 1️⃣ Abrir la consola (CMD)
+##  Abrir la consola (CMD)
 
 Ir a la carpeta raíz del proyecto:
 
@@ -39,7 +39,7 @@ Este comando realiza:
 
 Si todo está correcto, aparecerá:
 
-```text
+
 BUILD SUCCESS
 ```
 
@@ -49,45 +49,11 @@ Cómo instalar la librería en local
 
 La instalación se hace automáticamente con:
 
-```bash
-mvn clean install
-```
-
-Después de ejecutar, la librería queda disponible en:
-
-```text
-C:\Users\TU_USUARIO\.m2\repository\
-```
-
-Esto permite que otros proyectos Maven puedan usarla como dependencia.
-
----
-
- Cómo compilar solo el handler
-
-mvn -pl queueHandler -am clean package
-```
-
-Parámetros:
-
-* `-pl` → módulo específico
-* `-am` → compila dependencias necesarias automáticamente
-
----
-
-# 🚀 Cómo ejecutar desde consola
-
-Primero compilar:
-
 
 mvn clean install
 ```
-
-Luego ejecutar desde Eclipse:
-
-```text
-Main.java → Run As → Java Application
-```
+luego desde la carpeta raíz colocar este comando para compilar el proyecto:
+java -cp ".;..\..\umg.edu.gt.data-structure.queue\target\classes" umg.edu.gt.queuehandler.Main
 
 
 
@@ -178,7 +144,7 @@ Garantiza:
 
 ---
 
-# ⏱️ Cómo manejé la simulación de duración
+# Cómo manejé la simulación de duración
 
 La reproducción se simuló utilizando:
 
@@ -196,7 +162,7 @@ Por cada segundo:
 
 Esto genera una simulación realista del paso del tiempo.
 
----
+
 
 Extensiones Implementadas
 
